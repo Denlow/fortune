@@ -1,5 +1,7 @@
 var fortuneCount = 0;
+//business logic//
 
+// UI front logic starts //
 $(function(){
   $("form").submit(function(event){
     event.preventDefault();
