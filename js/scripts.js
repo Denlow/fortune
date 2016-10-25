@@ -7,15 +7,18 @@ $(function(){
     event.preventDefault();
     $("input:checkbox[name=fortuneSigns]:checked").each(function(){
       fortuneCount+=2;
-      $("#output").show();
-      $("form").hide();
+      $("#output").fadeIn();
+      $("form").fadeOut();
     });
     if (fortuneCount<4){
-      $("#output").append("you are gonna die");
+      $("#output").append("you gon' die, mon!");
     } else if (fortuneCount>=4 && fortuneCount<10) {
-      $("#output").append("you are going to be rich");
+      $("#output").append("You is going be rich man, mon!");
     } else {
-      $("#output").append("everything will stay the same");
+      $("#output").append("Nutting be different, mon!");
     }
   });
+  $("#output button").click(function(){
+     location.reload();
+   });
 });
