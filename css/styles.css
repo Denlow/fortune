@@ -9,10 +9,14 @@
 
 .jumbotron {
   text-align: center;
-  background-color: teal;
+  background-color: gold;
+  font-weight: bolder;
 }
 
 img {
   border: 5px dotted red;
-  border-radius: 25%;
+  border-radius: 34%;
+}
+
+
 }
